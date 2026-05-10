@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTHORIZATION | LNX</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #020202;
+      color: #00ff66;
+      font-family: "Courier New", monospace;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Hacker screen effect */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        transparent,
+        transparent 2px,
+        rgba(0,255,80,0.03) 3px
+      );
+      pointer-events: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 850px;
+      text-align: center;
+      padding: 40px;
+      border: 1px solid rgba(0,255,100,0.25);
+      background: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 40px rgba(0,255,80,0.08);
+      border-radius: 10px;
+      backdrop-filter: blur(3px);
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 58px;
+      color: #00ff66;
+      text-shadow: 0 0 12px rgba(0,255,80,0.5);
+      letter-spacing: 5px;
+      margin-bottom: 8px;
+    }
+
+    .lnx {
+      font-size: 20px;
+      color: #0aff84;
+      letter-spacing: 8px;
+      margin-bottom: 30px;
+    }
+
+    .warning {
+      font-size: 28px;
+      color: #00ff88;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .text {
+      font-size: 18px;
+      color: #9dffbf;
+      line-height: 1.9;
+    }
+
+    .line {
+      margin: 30px auto;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #00ff66, transparent);
+      box-shadow: 0 0 10px rgba(0,255,80,0.4);
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0.4;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>AUTHORIZATION</h1>
+
+    <div class="lnx">
+      LNX
+    </div>
+
+    <div class="warning blink">
+      DO NOT ACCESS THAT AREA
+    </div>
+
+    <div class="text">
+      This base can only be managed by the
+      <strong>ADMINISTRATOR</strong>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="text">
+      ---------------------------------------------------
+    </div>
+
+  </div>
+
+</body>
+</html>
